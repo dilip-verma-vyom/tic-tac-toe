@@ -7,9 +7,9 @@ import {
 import './component.css';
 
 const style = {
-    minHeight: 120,
-    minWidth: 120,
-    fontSize: 28,
+    minHeight: '4rem',
+    minWidth: '4rem',
+    fontSize: 24,
     borderRadius: 0,
 }
 

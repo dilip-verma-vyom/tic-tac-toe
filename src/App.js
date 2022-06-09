@@ -5,7 +5,6 @@ import React, {
 import {  
   Grid,
   Divider,
-  Button,
   FormControl,
   Select,
   MenuItem,
@@ -27,7 +26,6 @@ const {
 
 const {
   PLAYER,
-  COMPUTER,
   DRAW
 } = gameWinner;
 
@@ -59,8 +57,6 @@ const App = () => {
   const [ computerLevel, setComputerLevel ] = useState('');
   
   const [ winnerName, setWinnerName ] = useState(undefined);
-
-  const [ remainingTile, setRemainingTile ] = useState(9);
 
   const [ clickCount, setClickCount ] = useState(0);
 
@@ -145,7 +141,6 @@ const App = () => {
     });
     setWinnerName(undefined);
     setClickCount(0);
-    // window.location.reload(true);
   }
 
   const handleOnChangeComputerLevel = (e) => {
@@ -227,21 +222,6 @@ const App = () => {
               computerLevel={computerLevel}
               winnerName={winnerName}
             />
-              <br />
-              <br />
-              <br />
-            {/* <Button
-              variant='outlined'
-              sx={{
-                width: '55%'
-              }}
-              onClick={handleOnClickReset}
-            >
-              Reset
-            </Button> */}
-              <br />
-              <br />
-              {/* {renderWinner()} */}
 
           </MContainer>
         </Grid>
@@ -255,7 +235,6 @@ const App = () => {
           <MContainer>
             <GameTree 
               matrixValues={matrixValues}
-              // remainingTile={remainingTile}
               clickCount={clickCount}
               handleOnClickReset={handleOnClickReset}
               renderWinner={renderWinner}

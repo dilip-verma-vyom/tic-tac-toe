@@ -1,6 +1,5 @@
 import React, {
     useState,
-    useRef,
     useEffect,
     Fragment
 } from 'react';
@@ -10,7 +9,6 @@ import {
     Typography
 } from '@mui/material';
 import _ from 'lodash';
-import SquaresCanvas from './SquaresCanvas';
 import GameTile from './GameTile';
 import Xarrow, { Xwrapper } from 'react-xarrows';
 
@@ -46,9 +44,7 @@ const GameTree = (props) => {
 
     const renderTiles = () => {
         return tiles.map((item, index) => 
-            {
-                console.log(`elem${index}`);
-                console.log(`elem${index + 1}`);
+            {  
                 return (
                 <Fragment key={index}>
                         <GameTile 
@@ -96,23 +92,19 @@ const GameTree = (props) => {
             <GameTile
                 id={'XarrowA'}
             />
-            {/* <Grid
+            <Grid
                 container
                 spacing={2}
                 direction='row'
                 alignItems='center'
-                justifyContent='center'
+                justifyContent='space-evenly'
             >
-            </Grid> */}
-
-            <br />
-            <br />
-            <br />
-
-            
-            <div style={{display: 'flex', justifyContent: 'space-evenly', width: '90%'}}>
                 {renderTiles()}
-            </div>
+            </Grid>
+
+            <br />
+            <br />
+            <br />
             
             {
                 tiles.length > 0
