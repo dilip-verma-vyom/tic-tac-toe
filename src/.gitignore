@@ -1,0 +1,7 @@
+# dependencies
+/node_modules
+
+**/*.directory
+
+
+**/*package-lock.json
