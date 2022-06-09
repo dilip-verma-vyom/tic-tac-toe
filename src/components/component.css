@@ -1,0 +1,17 @@
+.btn-square {
+    /* outline: none; */
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    /* padding: 60px; */
+    min-width: 100px;
+    min-height: 100px;
+    margin: 0;
+}
+
+.btn-right-border {
+    border-right: 1px solid #000;
+}
+.btn-bottom-border {
+    border-bottom: 1px solid #000;
+}
